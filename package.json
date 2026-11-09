@@ -1,18 +1,19 @@
 {
   "name": "genrojotree",
   "version": "1.0.0",
-  "main": "index.js",
-
+  "private": true,
+  "description": "Tooling for ObjectAbuse (Rojo tree generation, lint, build)",
   "scripts": {
-    "check": "selene src && npm run build:rojo && rojo build -o AnimalHospitalAhhGame.rbxlx && rojo sourcemap default.project.json -o sourcemap.json",
-    "test": "npm run check",
+    "lint": "selene src",
     "build:rojo": "node tools/genRojoTree.js",
+    "build:place": "rojo build default.project.json -o ObjectAbuse.rbxlx",
+    "build:sourcemap": "rojo sourcemap default.project.json -o sourcemap.json",
+    "check": "npm run build:rojo && npm run lint && npm run build:place && npm run build:sourcemap",
+    "test": "npm run check",
     "watch:rojo": "chokidar \"src/**/*\" -c \"npm run build:rojo\""
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "chokidar-cli": "^3.0.0"
   }

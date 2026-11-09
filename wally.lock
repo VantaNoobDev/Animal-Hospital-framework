@@ -3,6 +3,16 @@
 registry = "test"
 
 [[package]]
+name = "elitriare/bytenet-max"
+version = "1.0.0"
+dependencies = []
+
+[[package]]
+name = "evaera/promise"
+version = "4.0.0"
+dependencies = []
+
+[[package]]
 name = "leifstout/dataservicetyped"
 version = "1.0.5"
 dependencies = [["Networker", "leifstout/networker@0.3.1"], ["ProfileStore", "lm-loleris/profilestore@1.0.3"], ["Signal", "sleitnick/signal@2.0.3"]]
@@ -18,36 +28,6 @@ version = "1.0.3"
 dependencies = []
 
 [[package]]
-name = "red-blox/future"
-version = "1.0.1"
-dependencies = [["Spawn", "red-blox/spawn@1.1.0"]]
-
-[[package]]
-name = "red-blox/guard"
-version = "1.0.1"
-dependencies = []
-
-[[package]]
-name = "red-blox/promise"
-version = "1.1.1"
-dependencies = [["Spawn", "red-blox/spawn@1.1.0"]]
-
-[[package]]
-name = "red-blox/red"
-version = "2.3.2"
-dependencies = [["Future", "red-blox/future@1.0.1"], ["Guard", "red-blox/guard@1.0.1"], ["Signal", "red-blox/signal@2.0.2"], ["Spawn", "red-blox/spawn@1.1.0"]]
-
-[[package]]
-name = "red-blox/signal"
-version = "2.0.2"
-dependencies = [["Spawn", "red-blox/spawn@1.1.0"]]
-
-[[package]]
-name = "red-blox/spawn"
-version = "1.1.0"
-dependencies = []
-
-[[package]]
 name = "sleitnick/signal"
 version = "2.0.3"
 dependencies = []
@@ -58,6 +38,6 @@ version = "1.8.0"
 dependencies = []
 
 [[package]]
-name = "user/animalhospitalahhgame"
+name = "user/objectabuse"
 version = "0.1.0"
-dependencies = [["DataServiceTyped", "leifstout/dataservicetyped@1.0.5"], ["Promise", "red-blox/promise@1.1.1"], ["Red", "red-blox/red@2.3.2"], ["Signal", "sleitnick/signal@2.0.3"], ["Trove", "sleitnick/trove@1.8.0"]]
+dependencies = [["ByteNetMax", "elitriare/bytenet-max@1.0.0"], ["DataServiceTyped", "leifstout/dataservicetyped@1.0.5"], ["Promise", "evaera/promise@4.0.0"], ["Signal", "sleitnick/signal@2.0.3"], ["Trove", "sleitnick/trove@1.8.0"]]

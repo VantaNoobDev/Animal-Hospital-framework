@@ -1,5 +1,5 @@
 {
-  "name": "AnimalHospitalAHHGame",
+  "name": "ObjectAbuse",
   "tree": {
     "$className": "DataModel",
     "ReplicatedStorage": {
@@ -7,31 +7,13 @@
         "$className": "Folder",
         "Services": {
           "$className": "Folder",
-          "ClassService": {
+          "ObjectService": {
             "$className": "Folder",
-            "ClassServiceClient": {
-              "$path": "src/services/ClassService/Client.luau"
-            }
-          },
-          "PatientService": {
-            "$className": "Folder",
-            "PatientServiceClient": {
-              "$path": "src/services/PatientService/Client.luau"
+            "ObjectServiceClient": {
+              "$path": "src/services/ObjectService/Client.luau"
             },
-            "PatientServiceUtils": {
-              "$path": "src/services/PatientService/Utils.luau"
-            }
-          },
-          "SanityService": {
-            "$className": "Folder",
-            "SanityServiceClient": {
-              "$path": "src/services/SanityService/Client.luau"
-            }
-          },
-          "ShiftService": {
-            "$className": "Folder",
-            "ShiftServiceClient": {
-              "$path": "src/services/ShiftService/Client.luau"
+            "ObjectServiceUtils": {
+              "$path": "src/services/ObjectService/Utils.luau"
             }
           }
         },
@@ -40,6 +22,12 @@
         },
         "Modules": {
           "$className": "Folder",
+          "Bootstrapper": {
+            "$path": "src/modules/Bootstrapper.luau"
+          },
+          "ModuleLoader": {
+            "$path": "src/modules/ModuleLoader.luau"
+          },
           "NumberUtil": {
             "$path": "src/modules/NumberUtil.luau"
           },
@@ -52,60 +40,26 @@
           "RequireUtil": {
             "$path": "src/modules/RequireUtil.luau"
           },
+          "StateMachine": {
+            "$path": "src/modules/StateMachine.luau"
+          },
           "TableUtil": {
             "$path": "src/modules/TableUtil.luau"
-          }
-        },
-        "Config": {
-          "$className": "Folder",
-          "GameConfig": {
-            "$path": "src/config/GameConfig.luau"
-          }
-        },
-        "Data": {
-          "$className": "Folder",
-          "Data": {
-            "$path": "src/data/Data.luau"
           }
         }
       },
       "Network": {
         "$className": "Folder",
-        "ApplyTreatment": {
-          "$path": "src/network/ApplyTreatment.luau"
-        },
-        "AssignRoom": {
-          "$path": "src/network/AssignRoom.luau"
-        },
-        "GetPatientSnapshot": {
-          "$path": "src/network/GetPatientSnapshot.luau"
-        },
-        "GetShiftState": {
-          "$path": "src/network/GetShiftState.luau"
-        },
-        "PatientResolved": {
-          "$path": "src/network/PatientResolved.luau"
-        },
-        "PatientSpawned": {
-          "$path": "src/network/PatientSpawned.luau"
-        },
-        "PurchaseClass": {
-          "$path": "src/network/PurchaseClass.luau"
-        },
-        "ResolveCheckIn": {
-          "$path": "src/network/ResolveCheckIn.luau"
-        },
-        "SanityChanged": {
-          "$path": "src/network/SanityChanged.luau"
-        },
-        "ShiftEnded": {
-          "$path": "src/network/ShiftEnded.luau"
-        },
-        "ShiftStarted": {
-          "$path": "src/network/ShiftStarted.luau"
-        },
-        "StartDialogue": {
-          "$path": "src/network/StartDialogue.luau"
+        "ObjectPackets": {
+          "$path": "src/network/ObjectPackets.luau"
+        }
+      },
+      "Assets": {
+        "$className": "Folder",
+        "$ignoreUnknownInstances": true,
+        "Objects": {
+          "$className": "Folder",
+          "$ignoreUnknownInstances": true
         }
       },
       "Packages": {
@@ -121,40 +75,10 @@
       },
       "Services": {
         "$className": "Folder",
-        "AnomalyService": {
+        "ObjectService": {
           "$className": "Folder",
-          "AnomalyServiceServer": {
-            "$path": "src/services/AnomalyService/Server.luau"
-          }
-        },
-        "ClassService": {
-          "$className": "Folder",
-          "ClassServiceServer": {
-            "$path": "src/services/ClassService/Server.luau"
-          }
-        },
-        "DialogueService": {
-          "$className": "Folder",
-          "DialogueServiceServer": {
-            "$path": "src/services/DialogueService/Server.luau"
-          }
-        },
-        "PatientService": {
-          "$className": "Folder",
-          "PatientServiceServer": {
-            "$path": "src/services/PatientService/Server.luau"
-          }
-        },
-        "SanityService": {
-          "$className": "Folder",
-          "SanityServiceServer": {
-            "$path": "src/services/SanityService/Server.luau"
-          }
-        },
-        "ShiftService": {
-          "$className": "Folder",
-          "ShiftServiceServer": {
-            "$path": "src/services/ShiftService/Server.luau"
+          "ObjectServiceServer": {
+            "$path": "src/services/ObjectService/Server.luau"
           }
         }
       },
