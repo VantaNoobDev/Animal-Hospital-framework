@@ -5,6 +5,12 @@
       "label": "Watch Rojo Tree",
       "type": "shell",
       "command": "npm run watch:rojo",
+      "options": {
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/d", "/c"]
+        }
+      },
       "isBackground": true,
       "problemMatcher": [],
       "group": {

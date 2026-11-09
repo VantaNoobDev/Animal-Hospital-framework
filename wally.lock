@@ -40,4 +40,8 @@ dependencies = []
 [[package]]
 name = "user/objectabuse"
 version = "0.1.0"
+<<<<<<< HEAD
 dependencies = [["ByteNetMax", "elitriare/bytenet-max@1.0.0"], ["DataServiceTyped", "leifstout/dataservicetyped@1.0.5"], ["Promise", "evaera/promise@4.0.0"], ["Signal", "sleitnick/signal@2.0.3"], ["Trove", "sleitnick/trove@1.8.0"]]
+=======
+dependencies = [["DataService", "leifstout/dataservicetyped@1.0.5"], ["Promise", "red-blox/promise@1.1.1"], ["Red", "red-blox/red@2.3.2"], ["Signal", "sleitnick/signal@2.0.3"], ["Trove", "sleitnick/trove@1.8.0"]]
+>>>>>>> 3fb7852 (Revert "Sixth version.")

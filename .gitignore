@@ -1,6 +1,10 @@
 node_modules/
+<<<<<<< HEAD
 Packages/
 *.rbxlx
 sourcemap.json
 tools/
 .vscode/
+=======
+Packages/
+>>>>>>> 3fb7852 (Revert "Sixth version.")

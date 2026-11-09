@@ -4,7 +4,11 @@
   "private": true,
   "description": "Tooling for ObjectAbuse (Rojo tree generation, lint, build)",
   "scripts": {
+<<<<<<< HEAD
     "lint": "selene src",
+=======
+    "test": "echo \"Error: no test specified\" && exit 1",
+>>>>>>> 3fb7852 (Revert "Sixth version.")
     "build:rojo": "node tools/genRojoTree.js",
     "build:place": "rojo build default.project.json -o ObjectAbuse.rbxlx",
     "build:sourcemap": "rojo sourcemap default.project.json -o sourcemap.json",

@@ -22,6 +22,7 @@
         },
         "Modules": {
           "$className": "Folder",
+<<<<<<< HEAD
           "Bootstrapper": {
             "$path": "src/modules/Bootstrapper.luau"
           },
@@ -46,10 +47,25 @@
           "TableUtil": {
             "$path": "src/modules/TableUtil.luau"
           }
+=======
+          "MultipleAsserts": {
+            "$path": "src/modules/MultipleAsserts.luau"
+          },
+          "Require": {
+            "$path": "src/modules/Require.luau"
+          }
+        },
+        "Config": {
+          "$className": "Folder",
+          "GameConfig": {
+            "$path": "src/config/GameConfig.luau"
+          }
+>>>>>>> 3fb7852 (Revert "Sixth version.")
         }
       },
       "Network": {
         "$className": "Folder",
+<<<<<<< HEAD
         "ObjectPackets": {
           "$path": "src/network/ObjectPackets.luau"
         }
@@ -60,6 +76,46 @@
         "Objects": {
           "$className": "Folder",
           "$ignoreUnknownInstances": true
+=======
+        "ApplyTreatment": {
+          "$path": "src/network/ApplyTreatment.luau"
+        },
+        "AssignRoom": {
+          "$path": "src/network/AssignRoom.luau"
+        },
+        "ClassDataSynced": {
+          "$path": "src/network/ClassDataSynced.luau"
+        },
+        "ClassLeveledUp": {
+          "$path": "src/network/ClassLeveledUp.luau"
+        },
+        "ClassPurchased": {
+          "$path": "src/network/ClassPurchased.luau"
+        },
+        "PatientResolved": {
+          "$path": "src/network/PatientResolved.luau"
+        },
+        "PatientSpawned": {
+          "$path": "src/network/PatientSpawned.luau"
+        },
+        "PurchaseClass": {
+          "$path": "src/network/PurchaseClass.luau"
+        },
+        "ResolveCheckIn": {
+          "$path": "src/network/ResolveCheckIn.luau"
+        },
+        "SanityChanged": {
+          "$path": "src/network/SanityChanged.luau"
+        },
+        "ShiftEnded": {
+          "$path": "src/network/ShiftEnded.luau"
+        },
+        "ShiftStarted": {
+          "$path": "src/network/ShiftStarted.luau"
+        },
+        "StartDialogue": {
+          "$path": "src/network/StartDialogue.luau"
+>>>>>>> 3fb7852 (Revert "Sixth version.")
         }
       },
       "Packages": {
